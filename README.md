@@ -1,8 +1,8 @@
 # Yueqi Chen
 
-我是厦门大学计算机专业的本科生，关注计算机视觉，尤其喜欢研究相机怎样从不同视角恢复深度。我把学习中遇到的问题做成浏览器里的交互实验，也为整理课堂资料、检查数据和发布项目写工具。
+我是厦门大学计算机专业的本科生，关注计算机领域前沿发展并尝试进行计算机视觉领域相关研究。我把学习中遇到的问题做成浏览器里的交互实验，也为整理课堂资料、检查数据和发布项目写工具。
 
-I'm a computer science undergraduate at Xiamen University interested in computer vision. I build interactive experiments in stereo geometry and machine learning, and contribute bug fixes to open-source Python projects.
+I'm a computer science undergraduate at Xiamen University. I follow advances in computing and am exploring research questions in computer vision. I build interactive experiments in stereo geometry and machine learning, and contribute bug fixes to open-source Python projects.
 
 [个人网站](https://chenyueqi2024.github.io/) · [成长手记与开源经历](https://chenyueqi2024.github.io/academic/) · [个人小天地](https://chenyueqi2024.github.io/life/)
 
