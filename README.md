@@ -22,6 +22,7 @@ I'm a computer science undergraduate at Xiamen University. I follow advances in 
 
 ## 开源贡献 · Selected pull requests
 
+- **eslint-plugin-jsdoc · 已合并**　修复自动转换 `/// Section` 等注释时意外生成 `*/`、导致 JavaScript 无法解析的问题，并补充 8 个回归用例。[PR #1848](https://github.com/gajus/eslint-plugin-jsdoc/pull/1848)
 - **fsspec** — 为 HTTP 目录探测限制读取量，避免为了判断目录而下载大文件。[PR #2465](https://github.com/fsspec/filesystem_spec/pull/2465)
 - **PEtab** — 按测量条件对齐模拟结果，避免乱序数据让散点和回归统计失真。[PR #612](https://github.com/PEtab-dev/libpetab-python/pull/612)
 - **pyinfra** — 让 SSH 配置的一条 `Include` 指令能读取多个路径，并补充读取顺序的回归测试。[PR #2090](https://github.com/pyinfra-dev/pyinfra/pull/2090)
