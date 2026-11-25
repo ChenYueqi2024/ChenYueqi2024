@@ -8,9 +8,14 @@ I'm a computer science undergraduate at Xiamen University. I follow advances in 
 
 ## 视觉与机器学习 · Vision & ML
 
-- **视角游乐场 · Viewpoint Playground**　为什么远处物体的深度更难测准？拖动双目相机和目标，观察左右画面中的视差，再打开测量噪声，比较多次估计得到的深度分布。[动手测深度](https://chenyueqi2024.github.io/viewpoint-playground/) · [源码](https://github.com/ChenYueqi2024/viewpoint-playground)
-- **Model Mechanics**　19 个中文交互实验，从语言 token 讲到图像、训练和决策。语言 Transformer 和 ViT 共用同一段计算代码，可以先关闭前馈层，再到视觉课移除一个图块，比较两种改动对输出的影响。[课程目录](https://chenyueqi2024.github.io/model-mechanics/) · [语言 Transformer](https://chenyueqi2024.github.io/model-mechanics/transformer/) · [ViT 实验](https://chenyueqi2024.github.io/model-mechanics/vit/)
-- **多视角数据体检 · Multiview Check**　在开始重建前，先核对图片尺寸、相机内参、位姿和时间戳。可以先看一份故意放入异常的合成数据报告，再用浏览器或 Python 在本机检查自己的数据。[查看异常报告](https://chenyueqi2024.github.io/multiview-check/demo-report.html) · [检查自己的数据](https://chenyueqi2024.github.io/multiview-check/) · [源码](https://github.com/ChenYueqi2024/multiview-check)
+我在探索计算机视觉中的三维几何问题，也用浏览器实验拆解机器学习模型。我的实验通常从一个可观察的现象出发，改变一个条件，再用数据或对照结果检查最初的解释。
+
+I explore 3D geometry in computer vision and build browser-based experiments to understand how machine learning models work. I start with an observable phenomenon, change one condition, and test the explanation against data or a controlled comparison.
+
+- **双目与深度 · Viewpoint Playground**　拖动双目相机，观察视差、距离与测量噪声怎样影响深度估计，再到真实照片里找对应点。[互动实验](https://chenyueqi2024.github.io/viewpoint-playground/) · [真实双目](https://chenyueqi2024.github.io/viewpoint-playground/photo/) · [源码](https://github.com/ChenYueqi2024/viewpoint-playground)
+- **相机位姿与多视角重建 · Camera Pose & Multiview Reconstruction**　回放真实相机轨迹，对照人为加入的漂移，再观察正确或错误的回环怎样改变优化结果。重建前也可以用 Multiview Check 核对图像、内参、位姿和时间戳。[轨迹回放](https://chenyueqi2024.github.io/trajectory-replay/) · [回环与位姿图](https://chenyueqi2024.github.io/explore/pose-graph/) · [多视角数据体检](https://chenyueqi2024.github.io/multiview-check/)
+- **Model Mechanics**　19 个中文交互实验，从分词与注意力讲到 ViT、训练与泛化。强化学习专题可比较探索策略、逐步回放 Q 值更新，并检验代理奖励怎样改变决策。[课程目录](https://chenyueqi2024.github.io/model-mechanics/) · [ViT](https://chenyueqi2024.github.io/model-mechanics/vit/) · [强化学习](https://chenyueqi2024.github.io/model-mechanics/rl/)
+- **生成与评估 · Generation & Evaluation**　固定同一批噪声，比较采样步数和条件引导如何改变扩散去噪结果。再用配对评估检查同一批数据上的性能差距，观察逐帧抽样和整段抽样如何影响置信区间。[扩散实验](https://chenyueqi2024.github.io/explore/diffusion/) · [配对评估](https://chenyueqi2024.github.io/explore/paired-evaluation/)
 
 ## 人工智能安全 · AI Safety & Security
 
@@ -24,6 +29,10 @@ I’m interested in AI safety and security, particularly how retrieval-augmented
 
 ## 学习与开发工具 · Tools
 
+我会把学习和项目中的重复工作做成小工具。从整理课堂疑问、延续项目上下文，到迁移演示文稿和检查待公开文件，我尽量让每个工具都能从样例或实际工作流程里试起。
+
+I build tools for recurring tasks in coursework and projects, from reviewing lecture questions and preserving project context to migrating slides and checking files before publication. I include examples that show how each tool fits into a real workflow.
+
 - **公开之前 · before-public**　公开文件前，用浏览器在本机检查照片里的 GPS 信息，也能用中英文 OCR 查找图片和扫描 PDF 中的敏感文字。命令行版还可以检查 Git 暂存区和提交历史。[试用合成样例](https://chenyueqi2024.github.io/before-public/) · [源码与命令行用法](https://github.com/ChenYueqi2024/before-public)
 
 - **SlidePatch** — 把已有 PowerPoint 内容迁移到新模板，保留可编辑的文字和原生图表。项目页有封面、正文和图表的迁移前后对比。[查看对比](https://github.com/ChenYueqi2024/SlidePatch#readme) · [下载](https://github.com/ChenYueqi2024/SlidePatch/releases)
@@ -31,6 +40,10 @@ I’m interested in AI safety and security, particularly how retrieval-augmented
 - **dsh-memory** — 为 DeepSeek Harness 保存工作区的约定、决策和偏好，让新会话接上同一项目的上下文。[网站与演示](https://chenyueqi2024.github.io/dsh-memory/) · [项目源码](https://github.com/ChenYueqi2024/dsh-memory)
 
 ## 开源贡献 · Selected pull requests
+
+我参与开源时，通常从一个可复现的问题入手，定位原因、缩小改动范围，并在需要时补上回归测试。下面几次贡献涉及编辑工具、文件系统、科学计算和基础设施。
+
+I contribute fixes to open-source libraries and tools. I focus on reproducing failures, making targeted changes, and adding regression tests where they help. These contributions span developer tooling, filesystems, scientific computing, and infrastructure.
 
 - **eslint-plugin-jsdoc · 已合并**　修复自动转换 `/// Section` 等注释时意外生成 `*/`、导致 JavaScript 无法解析的问题，并补充 8 个回归用例。[PR #1848](https://github.com/gajus/eslint-plugin-jsdoc/pull/1848)
 - **fsspec** — 为 HTTP 目录探测限制读取量，避免为了判断目录而下载大文件。[PR #2465](https://github.com/fsspec/filesystem_spec/pull/2465)
