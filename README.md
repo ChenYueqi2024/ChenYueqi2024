@@ -12,6 +12,16 @@ I'm a computer science undergraduate at Xiamen University. I follow advances in 
 - **Model Mechanics**　19 个中文交互实验，从语言 token 讲到图像、训练和决策。语言 Transformer 和 ViT 共用同一段计算代码，可以先关闭前馈层，再到视觉课移除一个图块，比较两种改动对输出的影响。[课程目录](https://chenyueqi2024.github.io/model-mechanics/) · [语言 Transformer](https://chenyueqi2024.github.io/model-mechanics/transformer/) · [ViT 实验](https://chenyueqi2024.github.io/model-mechanics/vit/)
 - **多视角数据体检 · Multiview Check**　在开始重建前，先核对图片尺寸、相机内参、位姿和时间戳。可以先看一份故意放入异常的合成数据报告，再用浏览器或 Python 在本机检查自己的数据。[查看异常报告](https://chenyueqi2024.github.io/multiview-check/demo-report.html) · [检查自己的数据](https://chenyueqi2024.github.io/multiview-check/) · [源码](https://github.com/ChenYueqi2024/multiview-check)
 
+## 人工智能安全 · AI Safety & Security
+
+我关注大模型系统的安全与可靠性，尤其是检索增强生成（RAG）和工具型智能体如何处理不可信输入、保护私有资料，以及限制真实操作。我用可复现的交互实验研究安全控制在哪一步起作用，以及它会不会挡住正常任务。
+
+I’m interested in AI safety and security, particularly how retrieval-augmented systems and tool-using agents handle untrusted inputs, protect private data, and enforce action permissions. I build interactive experiments to study where safeguards help and when they block legitimate tasks.
+
+- **大模型权限与安全评估 · LLM Safeguards & Evaluation**　用规则沙盒观察不可信资料如何影响候选操作，再用同一批合成案例对照多套权限策略，分别衡量上下文曝光、越权放行和误拒。[权限沙盒](https://chenyueqi2024.github.io/explore/ai-security/) · [AI 安全评估](https://chenyueqi2024.github.io/explore/ai-safety-eval/)
+- **证据与模型可靠性 · Evidence & Reliability**　检查 RAG 的回答是否有足够证据，比较置信度和实际正确率，观察何时该拒答或转人工复核。[RAG 证据实验](https://chenyueqi2024.github.io/model-evidence-labs/rag/) · [置信度与校准](https://chenyueqi2024.github.io/model-evidence-labs/calibration/)
+- **网络与信息安全 · Networking & Information Security**　通过网页请求、TLS、密码学和密文计算的实验，理解大模型应用沿用的系统信任边界。[专题目录](https://chenyueqi2024.github.io/explore/#security)
+
 ## 学习与开发工具 · Tools
 
 - **公开之前 · before-public**　公开文件前，用浏览器在本机检查照片里的 GPS 信息，也能用中英文 OCR 查找图片和扫描 PDF 中的敏感文字。命令行版还可以检查 Git 暂存区和提交历史。[试用合成样例](https://chenyueqi2024.github.io/before-public/) · [源码与命令行用法](https://github.com/ChenYueqi2024/before-public)
